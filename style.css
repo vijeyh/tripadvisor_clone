@@ -1,0 +1,576 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  padding: 10px;
+  margin-right: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbar__logo img {
+  width: 190px;
+  margin-left: 150px;
+}
+
+.navbar__menus {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__menus li {
+  list-style: none;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.navbar__menus li:last-child:hover {
+  text-decoration: underline;
+  background: none;
+}
+.navbar__menus li:hover {
+  background-color: rgba(128, 128, 128, 0.194);
+}
+.navbar__login {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.language {
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+.language:hover {
+  background-color: rgba(128, 128, 128, 0.194);
+}
+.navbar__login,
+.language,
+span {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 5px;
+}
+.navbar__signin a {
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  font-weight: 500;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.main h1 {
+  font-size: 50px;
+  margin: 40px 0;
+}
+.main ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+}
+.main ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+
+.main ul li:active {
+  text-decoration: underline;
+}
+
+.main ul li:hover {
+  color: rgba(0, 0, 0, 0.596);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.596);
+}
+.main__search {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 20px;
+}
+.main__search svg {
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  color: rgba(0, 0, 0, 0.651);
+}
+
+.main__search input {
+  width: 700px;
+  padding: 20px 30px;
+  padding-left: 40px;
+  border-radius: 50px;
+  font-size: 16px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border: none;
+  outline: none;
+}
+.main__search button {
+  position: absolute;
+  right: 6px;
+  padding: 15px 20px;
+  border: none;
+  background-color: #34e0a1;
+  border-radius: 50px;
+  font-weight: 600;
+  top: 6px;
+  cursor: pointer;
+}
+.main__search button:hover {
+  background: #34e0a1a6;
+}
+
+.business {
+  margin-left: 160px;
+  background-color: #eafaf4;
+  padding: 20px;
+  width: 77%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.business_title {
+  font-weight: 600;
+}
+.business_para {
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.business a {
+  color: #545454;
+  cursor: pointer;
+}
+
+.banner {
+  margin: 70px 0;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.banner_image_desc {
+  position: absolute;
+  bottom: 0;
+  top: 30px;
+  color: white;
+  padding: 30px;
+  font-size: 25px;
+  width: 40%;
+  margin: 30px;
+}
+.title {
+  font-weight: 800;
+  font-size: 50px;
+  color: white;
+}
+.title_para {
+  font-weight: 800;
+}
+.banner_image_btn {
+  background-color: #f2f2f2;
+  padding: 15px 20px;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 15px;
+}
+.banner_image_btn svg {
+  vertical-align: bottom;
+}
+.trips {
+  margin-bottom: 20px;
+}
+
+.trip-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.trip-container img {
+  background: #000;
+}
+
+.trip_title {
+  margin-left: 160px;
+  font-weight: 600;
+}
+
+.trip_tour {
+  width: 285px;
+  position: relative;
+}
+
+.trip_tour h3 {
+  position: absolute;
+  top: 240px;
+  left: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.trip_tour img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.trip__desc {
+  margin-top: 5px;
+  margin-left: 160px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.trip_tour img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.kovai {
+  margin-bottom: 20px;
+}
+
+.kovai-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.kovai_title {
+  margin-left: 160px;
+  font-weight: 600;
+}
+
+.kovai_tour {
+  width: 285px;
+  position: relative;
+}
+
+.kovai_tour h3 {
+  position: absolute;
+  top: 240px;
+  left: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.kovai_tour img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.kovai__desc {
+  margin-top: 5px;
+  margin-left: 160px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.kovai_tour svg {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: white;
+  padding: 7px;
+  border-radius: 50%;
+}
+.kovai_tour img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.museums {
+  margin-bottom: 20px;
+}
+
+.museum-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.museum_title {
+  margin-left: 160px;
+}
+
+.museum_tour {
+  width: 285px;
+  position: relative;
+}
+
+.museum_tour h3 {
+  position: absolute;
+  top: 240px;
+  left: 10px;
+  color: white;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.museum_tour img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.museum_tour svg {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: white;
+  padding: 7px;
+  border-radius: 50%;
+}
+
+.museum__desc {
+  margin-top: 5px;
+  margin-left: 160px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.museum_tour img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.bike-container {
+  display: flex;
+  justify-content: center;
+  background-color: #f2ecf9;
+  align-items: center;
+  width: 77%;
+  padding: 20px;
+  margin-left: 160px;
+  text-align: center;
+}
+
+.bike-img img {
+  width: 600px;
+}
+
+.bike-container-text {
+  margin: 50px;
+}
+
+.bike-container-text h1 {
+  font-weight: 550;
+}
+
+.bike-container-text p {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.bike-container_btn {
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer {
+  background: #f2f2f2;
+  padding: 30px 160px;
+  margin-top: 50px;
+}
+
+.footer__menus {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__menu {
+  display: flex;
+  gap: 40px;
+}
+
+.main__menu li {
+  list-style: none;
+}
+
+.main__menu li {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.main__menu li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.menu-one ul li:first-child,
+.menu-two ul li:first-child,
+.menu-three ul li:first-child {
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.sites {
+  font-size: 15px;
+}
+
+.footer__copy-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.footer__copy-right p {
+  font-size: 12px;
+}
+.copy-right-1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copy-right-2 {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+}
+.copy-right-3 {
+  display: flex;
+  justify-content: center;
+}
+.copy-right-2 i {
+  cursor: pointer;
+}
+
+.copy-right-2 i:hover {
+  opacity: 0.8;
+}
+
+.menubar {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar__logo img {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .menubar {
+    display: block;
+  }
+  .navbar__menus {
+    display: none;
+  }
+  .main ul {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    display: block;
+    width: fit-content;
+  }
+  .navbar__signin {
+    display: none;
+  }
+  .language svg,
+  p {
+    display: none;
+  }
+  .main__search input {
+    width: 200px;
+    padding-right: 100px;
+  }
+
+  .banner_image img {
+    height: 500px;
+    max-width: 100%;
+  }
+  .business {
+    display: none;
+  }
+  .trip_title {
+    margin-left: 5px;
+  }
+  .trip__desc {
+    display: block;
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+
+  .trip-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .trip_tour {
+    flex-basis: 80%;
+  }
+  .trip_tour h3 {
+    margin-top: 120px;
+  }
+  .bike-container-text h1 {
+    margin-bottom: 6px;
+  }
+  .bike-container-text p {
+    display: block;
+  }
+
+  .bike-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    padding-right: 85px;
+  }
+  .bike-img img {
+    object-fit: cover;
+    object-position: center;
+    height: 300px;
+    width: 257px;
+    margin-left: 110px;
+  }
+
+  .navbar {
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+  }
+  .museum_title {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  footer {
+    padding: 20px 100px;
+  }
+  .menu-one ul li:first-child,
+  .menu-two ul li:first-child,
+  .menu-three ul li:first-child {
+    display: block;
+  }
+  .copy-right-1 p {
+    display: block;
+    width: 100px;
+  }
+}
