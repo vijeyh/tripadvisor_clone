@@ -472,7 +472,7 @@ footer {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .navbar__logo img {
     margin-top: 10px;
     margin-left: 0;
@@ -537,9 +537,6 @@ footer {
   }
 
   .bike-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-left: 10px;
     padding-right: 85px;
   }
@@ -559,6 +556,10 @@ footer {
   }
   .museum_title {
     margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .kovai_title {
+    margin-left: 0px;
     margin-bottom: 10px;
   }
   footer {
