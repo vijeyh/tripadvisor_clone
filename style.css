@@ -503,7 +503,7 @@ footer {
   }
 
   .banner_image img {
-    height: auto;
+    height: 500px;
     max-width: 100%;
   }
   .business {
@@ -550,10 +550,9 @@ footer {
 
   .navbar {
     width: 100%;
-    margin: 0px;
+    margin: 00px;
     text-align: center;
     align-items: center;
-    flex-direction: column;
   }
   .museum_title {
     margin-left: 0;
@@ -564,22 +563,12 @@ footer {
     margin-bottom: 10px;
   }
   footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+    padding: 20px 100px;
   }
-  .main__menu {
+  footer > div {
     width: 100%;
     margin-bottom: 20px;
   }
-
-  .menu-one,
-  .menu-two,
-  .menu-three {
-    margin-bottom: 8px;
-  }
-
   .menu-one ul li:first-child,
   .menu-two ul li:first-child,
   .menu-three ul li:first-child {
