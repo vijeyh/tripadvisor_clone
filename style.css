@@ -503,7 +503,7 @@ footer {
   }
 
   .banner_image img {
-    height: 500px;
+    height: auto;
     max-width: 100%;
   }
   .business {
@@ -553,6 +553,7 @@ footer {
     margin: 0px;
     text-align: center;
     align-items: center;
+    flex-direction: column;
   }
   .museum_title {
     margin-left: 0;
@@ -563,8 +564,22 @@ footer {
     margin-bottom: 10px;
   }
   footer {
-    padding: 20px 100px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
   }
+  .main__menu {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .menu-one,
+  .menu-two,
+  .menu-three {
+    margin-bottom: 8px;
+  }
+
   .menu-one ul li:first-child,
   .menu-two ul li:first-child,
   .menu-three ul li:first-child {
